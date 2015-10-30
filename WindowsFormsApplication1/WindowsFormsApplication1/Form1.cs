@@ -10,11 +10,34 @@ using System.Windows.Forms;
 
 namespace WindowsFormsApplication1
 {
-    public partial class Form1 : Form
+    public partial class frmSkaro : Form
     {
-        public Form1()
+        bool Skaro = false; 
+        public frmSkaro()
         {
             InitializeComponent();
+        }
+
+        private void btnSkaro_Click(object sender, EventArgs e)
+        {
+            Skaro = true;
+            btnSkaro.Visible = false;
+            MessageBox.Show ("the timelords found you and imprisoned you for stealling the T.A.R.D.I.S.");
+        }
+
+        private void btnDavros_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnEarth_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnGalifrey_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
